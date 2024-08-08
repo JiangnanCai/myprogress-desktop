@@ -8,7 +8,6 @@ from utilis.diagram import get_canvas
 
 
 class MyTaskCollapseWidget(MyCollapseBox):
-    task_datas = ['单词', '大家的日本语']
 
     def __init__(self,
                  task_datas: Dict,

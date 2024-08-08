@@ -23,7 +23,7 @@ class MyProgressBar(PyQt5.QtWidgets.QWidget):
         self.label.setText(title)
 
         self.progressbar = PyQt5.QtWidgets.QProgressBar(self)
-        self.progressbar.setFormat('进度: %p%')
+        self.progressbar.setFormat('%p%')
 
         self.button_add = PyQt5.QtWidgets.QPushButton('+', self)
         self.button_add.setFixedSize(20, 20)
