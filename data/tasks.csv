@@ -1,0 +1,9 @@
+﻿task,subtask,cur_val,min_val,max_val,unit,deadline
+C++,Video Tutorial,50,0,2000,second,2024/9/1
+C++,C++ Primer,505,0,838,pages,
+Japanese,Words,0,0,3000,words,
+Japanese,Textbook,0,0,48,pages,
+Deutsch,Words,0,0,3000,words,
+Python,Fluent Python,0,0,600,pages,
+LeetCode,hot 100,0,0,100,topics,
+English,Words,0,0,2000,words,
