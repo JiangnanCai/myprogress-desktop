@@ -22,8 +22,12 @@ class TimeCheckBox(PyQt5.QtWidgets.QWidget):
         self.button_timer.clicked.connect(self.toggleTimer)
         self.button_timer.setText('start')
 
+        self.button_delete = PyQt5.QtWidgets.QPushButton(self)
+        self.button_delete.setText('delete')
+
         layout.addWidget(self.checkbox)
         layout.addWidget(self.button_timer)
+        layout.addWidget(self.button_delete)
 
         self.timer = PyQt5.QtCore.QTimer(self)
         self.timer.timeout.connect(self.updateTime)

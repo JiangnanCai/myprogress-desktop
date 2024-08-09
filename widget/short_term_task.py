@@ -32,9 +32,12 @@ class ShortTermTaskWidget(PyQt5.QtWidgets.QWidget):
 
     def new_widget(self, text):
         task_widget = TimeCheckBox(text, self.scroll_area_widget)
-        # label = PyQt5.QtWidgets.QLabel('asdad', self.scroll_area_widget)
         self.scroll_area_layout.addWidget(task_widget)
-        self.update()
+        task_widget.button_delete.clicked.connect(lambda: self.delete_widget(task_widget))
+
+    def delete_widget(self, widget):
+        self.scroll_area_layout.removeWidget(widget)
+        widget.deleteLater()
 
 
 if __name__ == '__main__':
